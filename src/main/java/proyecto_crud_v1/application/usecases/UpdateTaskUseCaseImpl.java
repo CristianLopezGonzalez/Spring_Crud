@@ -2,8 +2,9 @@ package proyecto_crud_v1.application.usecases;
 
 import java.util.Optional;
 
-import org.springframework.scheduling.config.Task;
 
+
+import proyecto_crud_v1.domain.models.Tasks;
 import proyecto_crud_v1.domain.ports.input.UpdateTaskUseCase;
 import proyecto_crud_v1.domain.ports.output.TaskRepositoryPort;
 
@@ -16,7 +17,7 @@ public class UpdateTaskUseCaseImpl implements UpdateTaskUseCase {
     }
 
     @Override
-    public Optional<Task> actualizarTarea(Long id, Task nuevosValores) {
+    public Optional<Tasks> actualizarTarea(Long id, Tasks nuevosValores) {
         return repositoryPort.update(nuevosValores); 
     }
 

@@ -1,9 +1,11 @@
 package proyecto_crud_v1.domain.ports.input;
 
-import org.springframework.scheduling.config.Task;
+
+
+import proyecto_crud_v1.domain.models.Tasks;
 
 public interface CreateTasskUserCase {
 
-    Task crearTarea(Task tarea);
+    Tasks crearTarea(Tasks tarea);
 
 }

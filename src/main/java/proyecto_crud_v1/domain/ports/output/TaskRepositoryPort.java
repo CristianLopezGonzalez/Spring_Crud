@@ -3,12 +3,14 @@ package proyecto_crud_v1.domain.ports.output;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.scheduling.config.Task;
+
+
+import proyecto_crud_v1.domain.models.Tasks;
 
 public interface TaskRepositoryPort {
-    Task save(Task tarea);
-    Optional<Task> findById(Long id);
-    List<Task>findAll();
-    Optional<Task>update(Task tarea);
+    Tasks save(Tasks tasks);
+    Optional<Tasks> findById(Long id);
+    List<Tasks>findAll();
+    Optional<Tasks>update(Tasks tarea);
     boolean deleteById(Long id);
 }

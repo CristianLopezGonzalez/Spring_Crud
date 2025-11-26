@@ -3,8 +3,8 @@ package proyecto_crud_v1.application.usecases;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.scheduling.config.Task;
 
+import proyecto_crud_v1.domain.models.Tasks;
 import proyecto_crud_v1.domain.ports.input.RetriveTaskUseCase;
 import proyecto_crud_v1.domain.ports.output.TaskRepositoryPort;
 
@@ -17,12 +17,12 @@ public class RetriveTaskUseCaseImpl implements RetriveTaskUseCase{
     }
 
     @Override
-    public Optional<Task> obtenerTarea(Long id) {
+    public Optional<Tasks> obtenerTarea(Long id) {
         return taskRepositoryPort.findById(id);
     }
 
     @Override
-    public List<Task> obtenerTodasLasTareas() {
+    public List<Tasks> obtenerTodasLasTareas() {
         return taskRepositoryPort.findAll();
     }
 

@@ -1,7 +1,8 @@
 package proyecto_crud_v1.application.usecases;
 
-import org.springframework.scheduling.config.Task;
 
+
+import proyecto_crud_v1.domain.models.Tasks;
 import proyecto_crud_v1.domain.ports.input.CreateTasskUserCase;
 import proyecto_crud_v1.domain.ports.output.TaskRepositoryPort;
 
@@ -14,7 +15,7 @@ public class CreateTaskUseCaseImpl implements CreateTasskUserCase{
     }
 
     @Override
-    public Task crearTarea(Task tarea) {
+    public Tasks crearTarea(Tasks tarea) {
         return taskrepositoryPort.save(tarea);
     }
 

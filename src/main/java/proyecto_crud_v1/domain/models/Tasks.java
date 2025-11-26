@@ -4,11 +4,21 @@ import java.time.LocalDateTime;
 
 public class Tasks {
 
-    private Long id;
+    private long id;
     private String titulo;
     private String descripcion;
     private LocalDateTime diaCreacion;
     private boolean completada;
+
+    
+
+    public Tasks(long id, String titulo, String descripcion, LocalDateTime diaCreacion, boolean completada) {
+        this.id = id;
+        this.titulo = titulo;
+        this.descripcion = descripcion;
+        this.diaCreacion = diaCreacion;
+        this.completada = completada;
+    }
 
     public Tasks(){
 

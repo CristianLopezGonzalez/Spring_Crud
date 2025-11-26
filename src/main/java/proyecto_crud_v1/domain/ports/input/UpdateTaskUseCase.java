@@ -2,9 +2,9 @@ package proyecto_crud_v1.domain.ports.input;
 
 import java.util.Optional;
 
-import org.springframework.scheduling.config.Task;
+import proyecto_crud_v1.domain.models.Tasks;
 
 public interface UpdateTaskUseCase {
 
-    Optional<Task>actualizarTarea(Long id,Task nuevosValores);
+    Optional<Tasks>actualizarTarea(Long id,Tasks nuevosValores);
 }
